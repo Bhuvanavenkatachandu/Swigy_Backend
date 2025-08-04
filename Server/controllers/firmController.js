@@ -57,6 +57,7 @@ const deleteFirmById=async (req,res)=>{
     if(!deletedFirm){
       return res.status(404).json({error : "No firm Found"});
     }
+    res.status(200).json({ success: "Firm deleted successfully"});
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Internal server method" });
