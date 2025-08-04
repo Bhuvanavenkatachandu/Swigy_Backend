@@ -46,7 +46,7 @@ const vendorLogin = async(req,res)=>{
 const getAllvendors=async (req,res)=>{
     try {
         const vendors=await Vendor.find().populate('firm')
-        res.json({vendors});
+        res.status(200).json({vendors});
     } catch (error) {
         console.error('Server Error:', error);
         res.status(500).json({ error: 'Internal server error' });
@@ -54,7 +54,7 @@ const getAllvendors=async (req,res)=>{
 }
 
 const getVendorid=async (req,res)=>{
-    const vendorId=req.params.chandu;
+    const vendorId=req.params.vendorId;
 
     try {
         const vendor=await Vendor.findById(vendorId).populate('firm');

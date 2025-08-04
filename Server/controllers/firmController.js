@@ -54,8 +54,8 @@ const deleteFirmById=async (req,res)=>{
     const firmId=req.params.firmId;
     const deletedFirm=await Firm.findByIdAndDelete(firmId);
 
-    if(!deleteFirm){
-      return res.status(404).json({erroe : "No firm Found"});
+    if(!deletedFirm){
+      return res.status(404).json({error : "No firm Found"});
     }
   } catch (error) {
     console.error(error);
