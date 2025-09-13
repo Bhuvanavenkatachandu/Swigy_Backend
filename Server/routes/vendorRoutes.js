@@ -7,7 +7,7 @@ router.post('/register',vendorController.vendorRegister);
 router.post('/login',vendorController.vendorLogin);
 
 router.get('/all-vendors',vendorController.getAllvendors);
-router.get('/single-vendor/:chandu',vendorController.getVendorid);
+router.get('/single-vendor/:vendorId',vendorController.getVendorid);
 
 
 module.exports=router;

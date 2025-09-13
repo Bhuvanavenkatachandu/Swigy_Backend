@@ -22,7 +22,8 @@ const addFirm = async (req, res) => {
     const { firmname, area, category, region, offer } = req.body;
 
     const image = req.file ? req.file.filename : undefined;
-    const vendor=await Vendor.findById(req.VendorId);
+    
+    const vendor=await Vendor.findById(req.vendorId);
     if(!vendor){
         return res.status(404).json({message: "vendor not found"});
     }
@@ -38,11 +39,12 @@ const addFirm = async (req, res) => {
 
     const savedFirm=await newFirm.save();
 
+    const firmId=savedFirm._id;
     vendor.firm.push(savedFirm._id);
 
     await vendor.save();
 
-    res.status(201).json({ message: "Firm created"});
+    res.status(201).json({ message: "Firm created",firmId});
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });

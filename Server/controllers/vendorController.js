@@ -18,7 +18,7 @@ const vendorRegister = async(req,res)=>{
         const newVendor = new Vendor({
             username,email,password:hashedPassword
         });
-        await newVendor.save();
+        await newVendor.save();   // saving in MongoDB
         res.status(201).json({message:"Vendor registered successfully"});
         console.log("Registered");
     }catch(error){

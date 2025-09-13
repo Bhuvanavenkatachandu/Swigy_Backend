@@ -1,7 +1,7 @@
 const jwt=require("jsonwebtoken");
 const Vendor=require("../models/Vendor");
 
-const secretKey=process.env.whatisurname
+const secretKey=process.env.whatisurname;
 
 const verifyToken=async (req,res,next)=>{
     const token =req.headers.token;
@@ -14,7 +14,7 @@ const verifyToken=async (req,res,next)=>{
         if(!vendor){
             return res.status(401).json({error: "vendor not found"});
         }
-        req.vendorId=vendor._id;
+        req.vendorId=vendor._id; //vendor ID directly accessible in future middleware/routes 
         next();
     } catch (error) {
         console.error(error);

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.navSection{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: orangered;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+    font-size: large;
+}
+.sideBar-Section{
+    width: 100%;
+    max-width: 15%;
+    height: 90vh;
+    padding-top: 10px;
+    background-color: lightgray;
+}
+.sideBar-Section ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: medium;
+    cursor: pointer;
+}
+.collectionSection{
+    display: flex;
+}
+
+/*login Section*/
+
+.loginSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.regesterSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.authForm label{
+    width: 100%;
+    max-width: 55%;
+    font-weight: 400;
+}
+.authForm{
+    width: 100%;
+    max-width: 50%;
+    margin-top: -230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.authForm input{
+    width: 100%;
+    max-width: 55%;
+    height: 1.4rem;
+}
+
+/*frim section*/
+
+.firmSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tableform{
+    width: 100%;
+    max-width: 50%;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.tableform input{
+    width: 100%;
+    max-width: 85%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+.tableform label{
+    width: 100%;
+    max-width: 85%;
+    font-weight: 600;
+}
+
+/* checkboxinp */
+
+.checkInp{
+    width: 100%;
+    max-width: 85%;
+    display: flex;
+}
+.checkInp label{
+    width: 20%;
+}
+.inputsContainer{
+    display: flex;
+    width: 100%;
+}
+.checkboxContainer{
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkboxContainer label{
+    width: 100%;
+
+}
+
+.checkboxContainer input{
+    margin-left: -180px;
+}
+
+/* region */
+.check-Inp {
+  width: 100%;
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.check-Inp > label {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.inputs-Container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.checkbox-Container {
+  display: flex;
+  align-items: center;
+  width: 48%;
+}
+
+.checkbox-Container label {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.checkbox-Container input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.radioInp {
+  width: 100%;
+  max-width: 85%;
+  margin-bottom: 15px;
+}
+
+.inputLabel {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 40px;
+}
+
+.radioOption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
