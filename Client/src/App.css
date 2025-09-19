@@ -195,3 +195,100 @@ body{
   gap: 8px;
   font-weight: 500;
 }
+
+
+
+/* App general styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #2f3640;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Main product section */
+.productSection {
+    max-width: 1200px;
+    margin: 80px auto 20px auto; /* leave space for navbar */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow-x: auto; /* horizontal scroll if table is too wide */
+}
+
+/* Table styling */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #2f3640;
+    color: #fff;
+    position: sticky;
+    top: 0; /* sticky header */
+    z-index: 2;
+}
+
+.product-table tr:hover {
+    background-color: #f1f2f6;
+}
+
+/* Image styling */
+.product-table img {
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* Delete button */
+.deleteBtn {
+    background-color: #e84118;
+    color: #fff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.deleteBtn:hover {
+    background-color: #c23616;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .productSection {
+        margin: 100px 10px 20px 10px;
+        padding: 10px;
+    }
+
+    .product-table th,
+    .product-table td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .deleteBtn {
+        padding: 4px 8px;
+        font-size: 13px;
+    }
+}
